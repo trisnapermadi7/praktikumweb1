@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pendaftaran Kursus</title>
+    <style>
+      .tcp{ background-color: skyblue;
+            color: rgb(227, 39, 39);
+            font-size: 35px;
+            padding-top: 20px;    
+            padding-bottom: 15px;  
+            font-family: arial;
+            font-weight: 600;
+      }
+      .tsa{
+        background-color: rgb(255, 139, 139);
+      }
+      .tbc{
+        font-size: 30px; 
+        font-family: arial;
+        background-color: grey;
+      }
+      td.tbc p{
+        font-size: 20px;
+      }
+      table.tkp td{
+        font-size: 15px;
+        padding-right: 10px;
+        font-family: Times new roman;
+      }
+      .kpk {
+        padding-top: 5px;
+      }
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1" cellpadding="2" cellspacing="" align="center" width="550" height="650">
+            <tr>
+                <td class="tcp" align="center" valign="top"> Pendaftaran Kursus</td>
+            </tr>
+            <tr>
+                <td class="tbc" align="left" valign="top"><b>Data Diri</b>
+                <table class="tkp">
+                    <tr>
+                        <p></p>
+                        <td>Nama</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td class="b" valign="top"> Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" id="Laki-laki" name="jenis kelamin">
+                            <label for="Laki-laki">Laki-laki</label><br>
+                            <input type="radio" id="Perempuan" name="jenis kelamin">
+                            <label for="Perempuan">Perempuan</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">Pilih Program Khusus</td>
+                        <td>
+                            <input type="checkbox" id="C#" name="C#">
+                            <label for="C#">C#</label><br>
+                            <input type="checkbox" id="Java" name="Java">
+                            <label for="Java">Java</label><br>
+                            <input type="checkbox" id="SQL" name="SQL">
+                            <label for="SQL">SQL</label><br>
+                            <input type="checkbox" id="HTML dan PHP" name="HTML dan PHP">
+                            <label for="HTML dan PHP">HTML dan PHP</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pilihan Hari/Jam Kursus</td>
+                        <td>
+                            <select>
+                                <option value="Senin - Rabu/09.00 - 11.00">Senin - Rabu/09.00 - 11.00</option>
+                                <option value="Kamis - Rabu/08.00 - 10.00">Kamis - Rabu/08.00 - 10.00</option>
+                                <option value="Selasa - Rabu/12.00 - 15.00">Selasa - Rabu/12.00 - 15.00</option>
+                                <option value="Minggu - Rabu/08.00 - 16.00">Minggu - Rabu/08.00 - 16.00</option>
+                            </select>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="150" valign="top" class="tsa">Komentar Anda
+                    <br>
+                    <textarea name="" id="" cols="50" rows="5"></textarea>
+                    <div class="kpk">
+                        <input type="Reset" value="Reset" name="Reset">
+                        <input type="Submit" value="Submit" name="Submit">
+                        <input type="button" value="Cancel" name="Cancel">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form> 
+</body>
+</html>
